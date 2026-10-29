@@ -1,10 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
+import { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import CalculadoraComponent from './Componentes/CalculadoraComponent';
+import RegistroValores from './Componentes/RegistroValores';
 
 export default function App() {
+  useEffect(()=>{
+
+  })
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Calculadora de Indice de Masa Corporal</Text>
+      <CalculadoraComponent></CalculadoraComponent>
+      <RegistroValores></RegistroValores>
       <StatusBar style="auto" />
     </View>
   );
